@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background: url(/Users/whitneyrawlins/Documents/Codecademy/Magazine%20challenge/images/johny-goerend-MYXMx2zr1g8-unsplash.jpg) no-repeat center center fixed;
+    width:100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    background-color: #1a7875;
+    overflow: hidden;
+}
+.main-content{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+header {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 20px;
+}
+
+
+h1 {
+    font-size: 260px;
+    text-transform: uppercase;
+    margin: 10px;
+    font-family: 'Londrina Solid', cursive;
+    font-weight: 400;
+    line-height: 0.75;
+    color:whitesmoke
+}
+
+h2 {
+    font-size: 130px;
+    text-transform: uppercase;
+    margin: 10px;
+    font-family: 'Londrina Shadow', cursive;
+    font-weight: 400;
+    line-height: 0.75;
+    color:whitesmoke;
+}
+
+.features {
+    background-color: #fff;
+    opacity: 0.75;
+    padding: 10px 20px;
+    margin: 20px;
+    font-family: 'Londrina Solid', cursive;
+}
+
+.features h3 {
+    text-transform: uppercase;
+    font-size: 40px;
+    margin:0;
+}
+
+.features li {
+    list-style: none;
+    text-align: right;
+    line-height: 2;
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@media only screen and (max-width: 900px) {
+    h1 {
+        font-size: 170px;
+    }
+    h2 {
+        font-size: 85px;
+    }
+
+    .features h3 {
+        font-size: 32px;
+    }
+
+    .features li {
+        font-size:24px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .main-content {
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 0;
+    }
+    header {
+        align-self: flex-start;
+    }
+} 
